@@ -7,6 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
+// 11056018 楊凱恩
+// 11056023 郭育綺
+// 11056037 鄭宜心
+
 data class Contact(
     val name: String,
     val phone: String
