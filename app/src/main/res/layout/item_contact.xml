@@ -1,0 +1,59 @@
+<!-- item_contact.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtContactName"
+        android:layout_width="53dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtContactPhone"
+        android:layout_width="103dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="36dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtContactName"
+        app:layout_constraintStart_toEndOf="@+id/txtContactName"
+        app:layout_constraintTop_toTopOf="@+id/txtContactName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnCall"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="40dp"
+        android:background="#FDF6FE"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/call"
+        android:text="Call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtContactPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FDF6FE"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/remove"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
